@@ -1,0 +1,102 @@
+home.html 
+
+<frameset rows="40%,*">
+<frame src="top.html" noresize scrolling="NO" name="topframe">
+<frameset cols="100%,*">
+<frame src="right.html" noresize scrolling="NO" name="rightframe">
+</frameset>
+</frameset>
+
+login.html 
+
+html>
+<body bg color="pink">
+<basefont face="Cambria" size="4"> <br>
+<center>
+
+<font face="Brush Script MT" size="7" color="purple">
+<b>Enter Login Details:</b>
+</font>
+</center>
+<form name="f1" method="post" action="right.html">
+<table align="center" width="100" height="150" cellspacing=”15”>
+<tr><td><b>Login ID:</b></td>
+<td><input type="text" name="t1"></td>
+</tr>
+<tr>
+<td><b>Password:</b></td>
+<td><input type="password" name="t2"></td>
+</tr>
+<tr align="center">
+<td><input type="submit" name="b1" value="Submit"></td>
+<td><input type="reset" name="b2" value="Reset"></td>
+</tr>
+</table> </form> </basefont> </body> </html>
+
+registration.html
+
+<html>
+<head><title>Registration Form</title></head>
+<body bgcolor="white">
+<center><font color="blue" size="6" face="arial">Registration Form</font></center><br />
+<form action="right.html">
+First Name(Minimum 6 characters)<font color="red">* </font>
+<input type='text' id='firstname' /><br /><br />
+Last Name<font color="red"><font color="red">* </font> </font> &nbsp;&nbsp;&nbsp;
+<input type='text' id='lastname' /><br /><br />
+EmailAddress<font color="red">* </font>
+&nbsp;&nbsp;&nbsp;
+<input type='text' id='email' /><br />
+<font color="red"></font> &nbsp;&nbsp;&nbsp;
+<font color="redblue"></font><br /><br/>
+Aadhar Number<font color="red">*</font>
+&nbsp;&nbsp;&nbsp;
+<input type='number' id='num'><br /><br/>
+Address<font color="red">* </font>
+&nbsp;&nbsp;&nbsp;
+<textarea rows="2" cols="20" id='addr' /></textarea> <br />
+<br/>Mobile No<font color="red">* </font> 
+&nbsp;&nbsp;&nbsp;
+<input type='text' id='mobileno' /><br />
+<input type='Submit' value='submit' />
+<input type='Reset' value='reset' />
+</form> </body> </html>
+
+right.html
+
+<html>
+<body bgcolor="aqua">
+<center>
+<font face="Brush Script MT" size="70" color="cornflowerblue">
+<h1><b>Welcome to flight reservation</b></font><br />
+<font face="Brush Script MT" size="50" color="cornflowerblue">
+</center>
+</body>
+</html>
+
+top.html
+
+<html>
+<head>
+<title>Top Frame</title>
+</head>
+<body bgcolor="mintcream">
+<center>
+<marquee bgcolor="coral" width="650" behavior="alternate">
+<font face="Brush Script MT" size="8" color="crimson"><b><i>Flight booking System</i></b>
+</font>
+</marquee> <br>
+<font face="Brush Script" size="6" color="crimson"><b>Created & Maintained By DBS</b></font</center>
+<br>
+<table width="100%" height="50%" cellspacing=10>
+<tr align="center">
+<td> <a href="Home.html" target="_parent"><font face="Brush Script"
+size="6"color="mediumseagreen">HOME </a> </td>
+<td> <a href="login.html" target="rightframe"><font face="Brush Script" size="6"
+color="mediumseagreen">LOGIN</a> </td>
+<td> <a href="registration.html" target="rightframe"> <font face="Brush
+Script"size="6" color="mediumseagreen">REGISTER </a> </td>
+</tr>
+</table>
+</body>
+</html>
